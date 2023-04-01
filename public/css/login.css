@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
+.container {
+  width: 50%;
+  background: #f0f0eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+
+.input {
+  margin: 20px;
+  margin-top: 60px;
+  height: 30px;
+  font-weight: 700;
+  padding: 0px 0px 5px 0px;
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 60%;
+  transition: all 0.2s ease-in-out;
+  transform-origin: center bottom;
+  background: transparent; 
+  outline: none;
+}
+
+.input:hover, .input:focus {
+  border-bottom: 2px solid #8a8784;
+  width: 61%;
+}
+
+.input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#name {
+  margin-top: 100px;
+}
+
+/*
+ * error message
+ */
+.error-message {
+  font-weight: 500;
+  color: red;
+  font-size: 12px;
+}
